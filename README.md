@@ -63,28 +63,30 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
-## como subir a aplicação
+## Como subir a aplicação
 ### Seguir o passo a passo
 
-### clonar o repositorio 
+### Clonar o repositorio 
 - git clone https://github.com/LoureiroBruno/cadastro_de_series-LaravelDocker-Mysql.git
-### acessar o repositorio clonado
+### Acessar o repositorio clonado
     - cd  cadastro_de_series-LaravelDocker-Mysql
-  ### build da aplicação
+  ### Build da aplicação
     - docker-compose build app
-  ### iniciar a aplicação
+  ### Iniciar a aplicação
     - docker-compose up -d
-   ### acessar o container da aplicação app
+   ### Acessar o container da aplicação app
     - docker exec -it "container id app" bash
     - composer install
     - cp .env.example .env
-  ### configurar conexão com o banco no .env criado
-    - DB_CONNECTION=sqlite
-  ### criar o arquivo do banco de dados sqlite
-    - database/database.sqlite 
+  ### Configurar conexão com o banco no .env criado
+    - DB_HOST=mysql
+    - DB_PORT=3306
+    - DB_DATABASE=nome_que_desejar_db
+    - DB_USERNAME=nome_usuario
+    - DB_PASSWORD=senha_aqui
   ### Rodar as migrações
     - php artisan migrate:fresh
-  ### gerar a key no arquivo .env
+  ### Gerar a key no arquivo .env
     - php artisan key:generate
     - php artisan storage:link
   ### Subir a Aplicação
