@@ -67,7 +67,7 @@ The Laravel framework is open-sourced software licensed under the [MIT license](
 ### Seguir o passo a passo
 
 ### clonar o repositorio 
-- git clone https://github.com/LoureiroBruno/cadastro_de_series-LaravelDocker.git
+- git clone https://github.com/LoureiroBruno/cadastro_de_series-LaravelDocker-Mysql.git
 ### acessar o repositorio clonado
     - cd  cadastro_de_series-LaravelDocker-Mysql
     - composer install
